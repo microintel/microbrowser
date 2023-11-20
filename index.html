@@ -175,9 +175,16 @@
     </center>
     <script>
         function search() {
-            var a = document.getElementById("s1").value
-            var b = "https://duckduckgo.com/?q=" + a + "&ia=web";
-            window.open(b)
+        var a = document.getElementById("s1").value;
+        var st=a.length;
+        
+        if (st> 8 && a.startsWith("https://")) {
+        window.open(a);
+        }
+        else {
+        var b = "https://duckduckgo.com/?q=" +a+ "&ia=web";
+        window.open(b);
+        }
         }
     </script>
 </body>
