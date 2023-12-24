@@ -1,12 +1,10 @@
-
-    let xxx=`<center>
+let xxx=`<center>
     <img class="di" src="https://microintel.github.io/Resources/images/mib.png" id="im" width="10%" style="border-radius: 20%;">
     <br>
     <h3><b>MICRO BROWSER</b></h3>
     <br>
     
-    <input class="di" id="s1" type="text" placeholder="Search here">
-    <button class="di" onclick="search()">Search</button>
+    <div id="x" class="gcse-search"></div>
     
     
     </center>
@@ -66,18 +64,22 @@
     </div>
     </a>
     </div>
+    <div>
+    <hr>
+    <h4 style="color:#9C27B0;margin-bottom:0px;">Powered BY</h4>
+    <h3 style="margin-top:0px;"><b>MICROINTEL</b> GOOGLE DUCKDUCKGO</h3>
     </center>`;
     document.getElementById('m').innerHTML=xxx;
     
-        function search() {
-        var a = document.getElementById("s1").value;
-        var st=a.length;
-        
-        if (st> 8 && a.startsWith("https://")) {
-        window.open(a);
-        }
-        else {
-        var b = "https://duckduckgo.com/?q=" +a+ "&ia=web";
-        window.open(b);
-        }
-        }
+    function search() {
+    var a = document.getElementById("s1").value;
+    var st=a.length;
+    
+    if (st> 8 && a.startsWith("https://")) {
+    window.open(a);
+    }
+    else {
+    var b = "https://duckduckgo.com/?q=" +a+ "&ia=web";
+    window.open(b);
+    }
+    }
